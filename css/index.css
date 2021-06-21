@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+html, body{
+    height: 100%;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    background: #051D3B;
+    display: flex;  
+    justify-content: space-between;
+    align-content: center;
+    padding: 2%  
+}
+
+.left-bar{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    
+}
+
+.center-bar{
+    width: 63%;
+}
+
+.right-bar{
+    width: 33%;
+}
+
+.logo{
+    cursor: pointer;
+    width: 145px;
+}
+
+.barra-pesquisa{
+    width: 100%;
+    height: 45px;
+    background:#2d405e;
+
+    border: none;
+    border-radius: 10px;
+
+    padding: 10px;
+
+    font-size: 15px;
+    color: white;
+
+    outline-style: none;
+
+}
+
+.barra-pesquisa::placeholder{
+    color: rgb(168, 168, 168);
+}
+
+.autor{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nome-autor{
+    padding: 7px;
+    color: white;
+
+    font-size: 14px;
+}
+.imagem-perfil{
+    border-radius: 20px;
+    width: 35px;
+    height: 35px;
+
+    cursor: pointer;
+}
+
+
+.menu{
+    padding-top: 80px;
+}
+
+.menu span{
+    color: white;
+}
+
+.editor-codigo{
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.editor-codigo span{
+    padding: 10px;
+    font-size: 14px;
+}
+
+.iconEditor{
+    cursor: pointer;
+}
+
+.iconComunidade{
+    cursor: pointer;
+}
+
+.comunidade{
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.comunidade span{
+    padding: 10px;
+    font-size: 14px;
+}
+
+.container-codigo{
+    width: 100%;
+    margin-top: 80px;
+    
+    background: #7303fc;
+    padding: 20px;
+
+    border-radius: 10px;
+    
+}
+
+.mac-buttons{
+    width: 40px;
+}
+
+.codigo{
+    padding: 20px;
+    background: #141414;
+
+    border-radius: 10px;
+}
+
+.codigo p{
+    padding-top: 20px;
+    color: white;
+    font-size: 14px;
+}
+
+.button-highlight{
+    margin-top: 20px;
+
+    width: 100%;
+    padding: 15px;
+   
+    background: #0a2647;
+    color: white;
+    font-size: 15px;
+
+    border: none;
+    border-radius: 12px;
+    
+    cursor: pointer;
+
+    transition:  0.5s;
+}
+
+.button-highlight:hover{
+    
+    background: #370d6b;
+
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(255,255,255,1);
+    box-shadow: 0px 0px 15px 0px rgba(255,255,255,1);
+}
+
+.projeto{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px 10px 40px;
+}
+
+
+.projeto span{
+
+    color: white;
+}
+
+.nome-projeto{
+    margin-top: 20px;
+    
+    height: 40px;
+    background: #2d405e;
+
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+
+
+    border:  none;
+    border-radius: 5px;
+
+    outline-style: none;
+}
+
+.nome-projeto::placeholder{
+    color: rgb(168, 168, 168);
+}
+
+.descricao-projeto{
+    margin-top: 20px;
+
+    height: 80px;
+    background: #2d405e;
+
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    
+    border: none;
+    border-radius: 5px;
+
+    outline-style: none;
+
+    resize: none;
+}
+
+.descricao-projeto::placeholder{
+    color: rgb(168, 168, 168);
+    padding: 20px 5px 20px 3px;
+}
+
+.personalizacao{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px 10px 40px;
+
+}
+
+.personalizacao span{
+    color: white;
+}
+
+.select-linguagem{
+    margin-top: 10px;
+
+    height: 40px;
+
+    padding: 10px;
+
+    border: none;
+    border-radius: 5px;
+
+    background:#2d405e;
+    color: white;
+
+    outline-style: none;
+}
+
+.container-color{
+    margin-top: 10px;
+    padding: 4px;
+
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.color{
+    background: #7303fc;
+    height: 35px;
+
+    border-radius: 5px;
+}
+
+.salvar-projeto{
+    margin-top: 30px;
+
+    height: 50px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #0a2647;
+    color: white;
+
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.salvar-projeto:hover{
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(255,255,255,1);
+    box-shadow: 0px 0px 15px 0px rgba(255,255,255,1);
+
+    background: #370d6b;
+
+    transition: 0.5s;
+}

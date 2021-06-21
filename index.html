@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Dev</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-bar">
+            <img class="logo" src="images/Logo.png" alt="AluraDev">
+            
+            <div class="menu">
+                <span>M E N U</span>
+                <div class="editor-codigo">
+                    <img class="iconEditor" src="images/IconEditorCodigo.png">
+                    <span>Editor de Código</span>
+                </div>
+                <div class="comunidade">
+                    <img class="iconComunidade" src="images/IconComunidade.png">
+                    <span>Comunidade</span>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="center-bar">
+            <input class="barra-pesquisa" type="text" placeholder="Busque por algo">
+
+            <div class="container-codigo">
+                    <div class="codigo">
+                        <img class="mac-buttons" src="images/mac_buttons.png" alt="">
+                        <p>
+                            const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+                             <br/> <br/>
+                        
+                            const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+                            <br/> <br/>
+
+                            const unfold = (f, seed) => {
+                            <br/>
+                            &nbsp; &nbsp; &nbsp; const go = (f, seed, acc) => {
+                            <br/>
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; const res = f(seed)
+                            <br/>
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return res ? go(f, res[1], acc.concat([res[0]])) : acc
+                                <br/>
+                            &nbsp; &nbsp; &nbsp; }
+                            <br/>
+                            &nbsp; &nbsp; &nbsp; return go(f, seed, [])
+                            <br/>
+                            }
+                        </p>
+                    </div>        
+            </div>
+
+            <button class="button-highlight">Visualizar com  o highlight</button>
+
+        </div>
+
+        <div class="right-bar">
+            <div class="autor">
+                <img class="imagem-perfil" src="images/Perfil.jpg" alt="Imagem Perfil">
+                <span class="nome-autor">Thales</span>
+            </div>
+
+            <div class="projeto">
+                <span>S E U &nbsp; P R O J E T O</span>
+                <input class="nome-projeto" type="text" placeholder="Nome do seu projeto">
+                <textarea class="descricao-projeto" type="text" placeholder="Descrição do seu projeto"></textarea>           
+            </div>
+            <div class="personalizacao">
+                <span>P E R S O N A L I Z A Ç Ã O</span>
+                <select class="select-linguagem" >
+                    <option value="C#">C#</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="Java">Java</option>
+                </select>
+                <div class="container-color">
+                    <div class="color"></div>
+                </div>
+
+                <button class="salvar-projeto">Salvar Projeto</button>
+
+            </div>
+        </div>
+
+
+        
+    </div>
+</body>
+</html>
